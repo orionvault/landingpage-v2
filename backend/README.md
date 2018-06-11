@@ -12,7 +12,7 @@ python3 -m venv venv
 ```
 * Source into venv
 ```
-source venv/bin/active
+source venv/bin/activate
 ```
 * Install dependencies
 ```
