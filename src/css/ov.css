@@ -12,6 +12,10 @@ body {
   width: 100%;
 }
 
+body.presale {
+  background-color: #F7F8F9;
+}
+
 h1 {
   font-size: 30px;
   margin: 40px 0 24px 0;
@@ -58,6 +62,10 @@ header .brand-heading {
 header .subtitle {
   color: rgba(0, 0, 0, 0.56);
   margin-bottom: 60px;
+}
+
+.navbar-white {
+  background-color: #fff;
 }
 
 #principles img {
@@ -114,6 +122,53 @@ header .subtitle {
 
 #solution p {
   margin-bottom: 24px;
+}
+
+#presale_form .wrapper {
+  padding: 40px 70px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-top: 100px;
+  -webkit-box-shadow: 0px 0px 5px 0px #cccccc;
+  -moz-box-shadow: 0px 0px 5px 0px #cccccc;
+  box-shadow: 0px 0px 5px 0px #cccccc;
+}
+
+#presale_form .wrapper form {
+  width: 100%;
+}
+
+#presale_form .wrapper form input[type="text"], #presale_form .wrapper form input[type="email"], #presale_form .wrapper form input[type="number"], #presale_form .wrapper form select {
+  width: 100%;
+  background-color: #F1F3F4;
+  color: #000;
+  border-radius: 5px;
+  border: none;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+#presale_form .wrapper form input[type="submit"] {
+  border: 4px solid #daae46;
+  margin: 20px 0;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #fff;
+  color: #DAAE46;
+}
+
+#message {
+  text-align: center;
+  font-size: 20px;
+}
+
+#message.error {
+  color: red;
+}
+
+#message.success {
+  color: green;
 }
 
 footer {
