@@ -31,11 +31,18 @@
     if (window.scrollY > 0) {
       $('#mainNav').addClass('nav-opaque');
       $('#mainNav').removeClass('nav-transparent');
-    } else {
+    } else if ($('.navbar-toggler').hasClass('collapsed')) {
       $('#mainNav').removeClass('nav-opaque');
       $('#mainNav').addClass('nav-transparent');
     }        
   };
+
+  $(window).scroll(updateMenuBg);
+  $('#navbarResponsive').on('hidden.bs.collapse', updateMenuBg);
+  $('#navbarResponsive').on('show.bs.collapse', function() {
+      $('#mainNav').addClass('nav-opaque');
+      $('#mainNav').removeClass('nav-transparent');    
+  });
 
   $(window).scroll(updateMenuBg);
 

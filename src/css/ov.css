@@ -8,7 +8,7 @@ body {
   color: black;
   font-family: 'Google Sans';
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   width: 100%;
 }
 
@@ -30,7 +30,7 @@ h2 {
 
 h3 {
   font-size: 24px;
-  margin: 40px 0 24px 0;
+  margin: 40px 0;
 }
 
 h4 {
@@ -50,6 +50,18 @@ p:last-child {
   margin-bottom: 0;
 }
 
+a, button, a:focus, a:visited, .read-more {
+  color: #d8a734;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a.collapsible, button.collapsible, a:focus.collapsible, a:visited.collapsible, .read-more.collapsible {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 header {
   background: url("../img/mona_lisa.png") no-repeat center top;
   background-size: cover;
@@ -61,15 +73,15 @@ header .brand-heading {
 
 header .subtitle {
   color: rgba(0, 0, 0, 0.56);
+  margin-bottom: 24px;
+}
+
+header .main-button {
   margin-bottom: 60px;
 }
 
-.navbar-white {
-  background-color: #fff;
-}
-
 #principles img {
-  max-width: 100%;
+  height: 100%;
   padding-top: 24px;
 }
 
@@ -96,12 +108,9 @@ header .subtitle {
 
 #solution .frame {
   align-items: center;
-  border: 1px solid #d5a23c;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
   margin-bottom: 24px;
-  padding: 40px 0;
 }
 
 #solution .frame h4 {
@@ -110,9 +119,8 @@ header .subtitle {
 }
 
 #solution .frame .icon {
-  height: 100px;
-  min-width: 100px;
-  margin-left: 10px;
+  height: 60px;
+  min-width: 60px;
 }
 
 #solution .frame .icon img {
@@ -121,7 +129,54 @@ header .subtitle {
 }
 
 #solution p {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
+}
+
+#product .container-fluid {
+  padding: 0;
+}
+
+#product .container-fluid > div {
+  margin: 40px 0 60px 0;
+}
+
+#product .container-fluid .row {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+#product .container-fluid .row .product-gallery {
+  display: flex;
+  left: calc(50vw - 110px);
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+#product .container-fluid .row .product-gallery > div {
+  width: 219px;
+  margin-right: 43px;
+}
+
+#product .container-fluid .row .product-gallery > div:last-child {
+  margin-right: calc(50vw - 110px);
+}
+
+#product .container-fluid .product-image img {
+  position: relative;
+  left: calc(50% - 397px);
+}
+
+#marketBusiness {
+  padding-bottom: 60px;
+}
+
+#marketBusiness .diagram {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+#marketBusiness .read-more {
+  margin-top: 30px;
 }
 
 #presale_form .wrapper {
@@ -171,34 +226,42 @@ header .subtitle {
   color: green;
 }
 
-footer {
-  background-color: #4a4a4a;
-  color: #ffffff;
+#information {
   padding-bottom: 60px;
 }
 
-footer a {
-  color: white;
-}
-
-footer p {
+#information p {
   margin: 40px 0;
 }
 
-footer .logos {
+#information .logos {
   justify-content: space-around;
   margin: 0 0 40px 0;
 }
 
-footer .logos .icon {
+#information .logos .icon {
   height: 100px;
   min-width: 100px;
   display: flex;
   align-items: center;
 }
 
-footer .logos .icon img {
+#information .logos .icon img {
   width: 100%;
+}
+
+footer {
+  background-color: #4a4a4a;
+  color: #ffffff;
+  padding-bottom: 36px;
+}
+
+footer h2 {
+  margin: 40px 0;
+}
+
+footer a {
+  color: white;
 }
 
 footer .contact {
@@ -207,7 +270,6 @@ footer .contact {
 
 footer .contact div {
   display: flex;
-  justify-content: center;
 }
 
 footer .contact img {
@@ -241,19 +303,12 @@ footer .contact > h5 {
   padding: 8px 16px;
 }
 
-.navbar a, .navbar button {
-  color: #d8a734;
-  font-family: 'Google Sans';
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.navbar a .logo, .navbar button .logo {
+.navbar .logo {
   height: 20px;
 }
 
 @media (min-width: 768px) {
-  .navbar a .logo, .navbar button .logo {
+  .navbar .logo {
     height: 20px;
   }
 }
@@ -266,11 +321,19 @@ footer .contact > h5 {
   display: flex;
 }
 
-.navbar .nav-link {
-  padding: 8px 12px;
-  margin-left: 12px;
+.navbar .navbar-toggler {
+  padding: 0;
+}
+
+.navbar .navbar-toggler:focus {
+  outline: 0;
 }
 
 .navbar .wp {
   outline: 1px solid;
+}
+
+.main-button {
+  border: 2px solid;
+  display: inline-block;
 }
