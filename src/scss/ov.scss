@@ -11,7 +11,7 @@ body {
     color: black;
     font-family: 'Google Sans';
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     width: 100%;
 
     &.presale {
@@ -21,81 +21,66 @@ body {
 
 h1 {
     font-size: 30px;
-    margin: 40px 0 24px 0;
+    margin: 72px 0 24px 0;
 }
 
 h2 {
     color: #d5a23c;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     margin: 40px 0 0 0;
 }
 
 h3 {
     font-size: 24px;
-    margin: 40px 0;
+    font-weight: 500;
+    margin: 40px 0 34px 0;
 }
 
 h4 {
     font-size: 18px;
-    font-weight: 400; 
-    line-height: 26px;
-    margin: 20px 0 0 0;
+    font-weight: 500; 
+    margin: 28px 0 16px 0;
 }
 
 h5 {
-    font-size: 14px;
-    font-weight: 700;    
-    margin: 0; 
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
 }
 
-p:last-child {
+p {
     margin-bottom: 0;
 }
 
-a, button, a:focus, a:visited, .read-more {
-    color: #d8a734;
-    font-weight: 700;
+a, a:focus, a:hover, a:visited {
+    color: black;
     text-decoration: none;
-
-    &.collapsible {
-        color: black;
-        font-weight: 500;
-        text-decoration: none;
-    }
+    outline: 0;
 }
 
 header {
-    background: url('../img/mona_lisa.png') no-repeat center top;
-    background-size: cover;
+    .row:first-child {
+        background: url('../img/mona_lisa.png') no-repeat center top;
+        background-size: cover;
+    }
 
     .brand-heading {
-        margin: 110px 0 24px 0;
+        margin: 110px 0 26px 0;
     }
     
     .subtitle {
         color: rgba(0, 0, 0, 0.56);
-        margin-bottom: 24px;
+        margin-bottom: 32px;
     }
 
     .main-button {
-        margin-bottom: 60px;    
+        margin-bottom: 45px;    
     }
-}
 
-#principles {
     img {
-        height: 100%;
-        padding-top: 24px;
-    }
-
-    .row {
-        background-color: #fafafa;
-        margin-bottom: 24px;
-    }
-
-    .row:last-child {
-        margin-bottom: 0;
+        max-width: 100%;
+        padding-top: 32px;
     }
 }
 
@@ -105,15 +90,34 @@ header {
     }
 
     li {
+        line-height: 20px;
         list-style-image: url("../img/bullet.svg");
+        margin-bottom: 16px;
+
+        span {
+            vertical-align: top;
+        }
     }
 
     .row:last-child {
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
 }
 
 #solution {
+
+    h3 {
+        margin: 40px 0 34px 0;    
+    }
+
+    p {
+        margin: 18px 0 34px 0;
+    }
+
+    .intermission {
+        margin: 0 auto;    
+    }
+
     .frame {
         align-items: center;
         display: flex;
@@ -121,13 +125,12 @@ header {
         margin-bottom: 24px;
     
         h4 {
-            font-weight: 500;
-            margin: 0 20px;
+            margin: 0 8px;
         }
 
         .icon {
-            height: 60px;
-            min-width: 60px;
+            height: 52px;
+            width: 42px;
             
             img {
                 height: 100%;
@@ -135,10 +138,27 @@ header {
             }    
         }
     }
+}
 
-    p {
-        margin-bottom: 40px;
-    } 
+#benefits {
+    padding-bottom: 56px;
+    
+    .benefit {
+        display: flex;
+        margin-top: 24px;
+
+        h4 {
+            margin: 0 8px 6px 0;
+        }
+
+        .description {
+            margin: 0 16px;
+
+            p {
+                margin-bottom: 16px;
+            }
+        }       
+    }
 }
 
 #product {
@@ -146,7 +166,7 @@ header {
         padding: 0;
 
         & > div {
-            margin: 40px 0 60px 0;        
+            margin: 25px 0 60px 0;        
         }
 
         .row {
@@ -178,17 +198,59 @@ header {
 }
 
 #marketBusiness {
-    padding-bottom: 60px;
-    
+    padding-bottom: 40px;
+        
     .diagram {
-        margin-top: 40px;
-        margin-bottom: 30px;
+        margin: 24px 0;
     }
 
-    .read-more {
-        margin-top: 30px;
+    p {
+        margin-bottom: 16px;
+    }
+
+    .rhombuses {
+        display: flex;
+        justify-content: center;
+        margin: 38px 0 26px 0;
+    }
+
+    li {
+        line-height: 20px;
+        list-style-image: url("../img/bullet_white.svg");
+        margin-bottom: 16px;
+
+        span {
+            vertical-align: top;
+        }
+    }    
+
+    ul:first-child > li {
+        list-style-image: url("../img/bullet.svg");
     }
 }
+
+#ico {
+    h3 {
+        margin: 0;
+    }
+
+    h4 {
+        margin: 8px 0 18px 0;
+    }
+
+    p {
+        margin-top: 24px;
+    }
+
+    .diagram {
+        margin: 40px 0;
+    }
+
+    .main-button {
+        margin: 20px 0 56px 0;      
+    }
+}
+
 
 #presale_form {
 
@@ -295,7 +357,7 @@ footer {
 }
 
 .content-section {
-    border-bottom: 1px solid #ffca56;
+    border-bottom: 1px solid #ffca56;   
 }
 
 .container > .row > div {
@@ -310,42 +372,53 @@ footer {
 
 .nav-transparent {
     background-color: transparent;
-    border: none;
+    border-bottom: 1px solid transparent;
 }
 
 .navbar {
-    padding: 8px 16px;
+    padding: 16px;
+    -webkit-transition: background-color .3s;
+    -webkit-transition: border-bottom .3s;
+
+    .navbar-brand, .navbar-toggler {
+        display: flex;
+        padding: 0;
+    }
 
     .logo {
         height: 20px;
-        
-        @media(min-width: 768px) {
-            height: 20px;
-        }
-    }
-
-    .navbar-brand {
-        padding: 0;
-    }
-
-    .buttons {
-        display: flex;
-    }
-
-    .navbar-toggler {
-        padding: 0;
     }
 
     .navbar-toggler:focus {
         outline: 0;
-    }    
+    } 
 
-    .wp {
-        outline: 1px solid;
-    }    
+    li {
+        padding-top: 16px;
+    }
 }
 
-.main-button {
-    border: 2px solid;
+a.nav-link {
+    color: #d8a734;
+    font-size: 12px;
+    letter-spacing: 0.75px;    
+    padding: 0;
+}
+
+a.main-button {
+    border: 1px solid;
     display: inline-block;
+    font-weight: 700;
+    padding: 8px 24px;    
+}
+
+.learn-more {
+    color: #d8a734;
+    font-weight: 700;
+}
+
+.intermission {
+    border-top: 1px solid #d5a23c;
+    width: 50px;
+    margin: 32px auto;
 }
