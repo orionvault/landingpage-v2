@@ -56,9 +56,22 @@ a, a:focus, a:hover, a:visited {
   outline: 0;
 }
 
-header .row:first-child {
+header .container-fluid {
   background: url("../img/mona_lisa.png") no-repeat center top;
   background-size: cover;
+}
+
+@media (min-width: 768px) {
+  header .container-fluid {
+    background: url("../img/mona_lisa_desktop.png") no-repeat center top;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  header .principle:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
 }
 
 header .brand-heading {
@@ -97,6 +110,18 @@ header img {
   margin-bottom: 30px;
 }
 
+@media (min-width: 768px) {
+  #problem h2 {
+    margin-bottom: 30px;
+  }
+  #problem h4 {
+    margin-top: 16px;
+  }
+  #problem .row:last-child > div:last-child {
+    border-left: 1px solid #d5a23c;
+  }
+}
+
 #solution h3 {
   margin: 40px 0 34px 0;
 }
@@ -122,12 +147,26 @@ header img {
 
 #solution .frame .icon {
   height: 52px;
+  margin-bottom: 24px;
   width: 42px;
 }
 
 #solution .frame .icon img {
   height: 100%;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  #solution h3 {
+    margin: 60px 0 48px 0;
+  }
+  #solution .frame {
+    flex-direction: column;
+  }
+  #solution .frame .icon {
+    height: 84px;
+    width: 50px;
+  }
 }
 
 #benefits {
@@ -167,6 +206,7 @@ header img {
 #product .container-fluid .row .product-gallery {
   display: flex;
   left: calc(50vw - 110px);
+  padding: 0;
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
@@ -183,6 +223,15 @@ header img {
 #product .container-fluid .product-image img {
   position: relative;
   left: calc(50% - 397px);
+}
+
+@media (min-width: 576px) {
+  #product .container-fluid > div {
+    margin: 40px 0 0 0;
+  }
+  #product .container:last-child {
+    margin-bottom: 60px;
+  }
 }
 
 #marketBusiness {
@@ -231,10 +280,34 @@ header img {
 
 #ico .diagram {
   margin: 40px 0;
+  overflow: hidden;
 }
 
 #ico .main-button {
   margin: 20px 0 56px 0;
+}
+
+@media (min-width: 992px) {
+  #ico h4 {
+    margin: 8px 0 0 0;
+  }
+  #ico p {
+    margin-top: 0;
+  }
+  #ico .diagram {
+    margin: 36px 0;
+  }
+  #ico .ico-snippets {
+    display: flex;
+    margin-bottom: 56px;
+  }
+  #ico .ico-snippets .ico-snippet {
+    border-left: 1px solid #d5a23c;
+    flex: 33;
+  }
+  #ico .ico-snippets .ico-snippet:first-child {
+    border-left: none;
+  }
 }
 
 #presale_form .wrapper {
@@ -293,19 +366,18 @@ header img {
 }
 
 #information .logos {
-  justify-content: space-around;
-  margin: 0 0 40px 0;
-}
-
-#information .logos .icon {
-  height: 100px;
-  min-width: 100px;
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-#information .logos .icon img {
-  width: 100%;
+#information .logos .logo {
+  height: 48px;
+  margin: 12px;
+}
+
+#information .logos .logo img {
+  height: 100%;
 }
 
 footer {
@@ -342,7 +414,7 @@ footer .contact > h5 {
   border-bottom: 1px solid #ffca56;
 }
 
-.container > .row > div {
+.container > .row > div, .container-fluid > .row > div {
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -364,7 +436,6 @@ footer .contact > h5 {
 }
 
 .navbar .navbar-brand, .navbar .navbar-toggler {
-  display: flex;
   padding: 0;
 }
 
@@ -378,6 +449,24 @@ footer .contact > h5 {
 
 .navbar li {
   padding-top: 16px;
+}
+
+.navbar > .container > a, .navbar > .container > button {
+  display: flex;
+}
+
+@media (min-width: 992px) {
+  .navbar > .container > button {
+    display: none;
+  }
+  .navbar li {
+    align-items: center;
+    display: flex;
+    padding: 0;
+  }
+  .navbar .navbar-collapse {
+    flex-direction: row-reverse;
+  }
 }
 
 a.nav-link {
