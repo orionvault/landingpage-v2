@@ -182,6 +182,11 @@ header img {
   margin: 0 8px 6px 0;
 }
 
+#benefits .benefit img {
+  border-radius: 50%;
+  height: 140px;
+}
+
 #benefits .benefit .description {
   margin: 0 16px;
 }
@@ -332,6 +337,7 @@ header img {
 
 #team .face img {
   border-radius: 50%;
+  height: 140px;
 }
 
 #team .face p {
