@@ -61,8 +61,11 @@ a, a:focus, a:hover, a:visited {
 
 header {
     .container-fluid {
+        align-items: center;    
         background: url('../img/mona_lisa.png') no-repeat center top;
         background-size: cover;
+        display: flex;
+        min-height: 66vh;
 
         @media(min-width: 768px) {
             background: url('../img/mona_lisa_desktop.png') no-repeat center top;
@@ -92,7 +95,7 @@ header {
     }
 
     img {
-        max-width: 100%;
+        margin: auto;
         padding-top: 32px;
     }
 }
@@ -246,7 +249,8 @@ header {
         
         .product-image img {
             position: relative;
-            left: calc(50% - 397px);         
+            left: calc(50% - 440px);
+            width: 880px;
         } 
     }
 
@@ -381,7 +385,6 @@ header {
             }
 
             &.description {
-                max-width: 200px;
                 margin: 0 auto;
             }
 
@@ -394,13 +397,10 @@ header {
 
     .wrapper {                 
         padding: 40px 70px;         
-        border-radius: 5px;    
+        
         background-color: #fff;
         margin-top: 100px;
-        -webkit-box-shadow: 0px 0px 5px 0px rgba(204,204,204,1);
-        -moz-box-shadow: 0px 0px 5px 0px rgba(204,204,204,1);
-        box-shadow: 0px 0px 5px 0px rgba(204,204,204,1);
-    
+
         form {                 
             width: 100%;
 
@@ -414,14 +414,17 @@ header {
                 padding: 10px;
             }
 
-            input[type="submit"] {          
-                border: 4px solid #daae46;      
-                margin: 20px 0;
-                padding: 10px 50px;             
-                text-transform: uppercase;      
-                font-weight: bold;              
-                background-color: #fff;         
-                color: $yellow;
+            input[type="submit"] {
+                background-color: #fff;          
+                border: 1px solid;
+                color: #d8a734;
+                cursor: pointer;
+                font-size: 12px;
+                letter-spacing: 0.75px;    
+                display: inline-block;
+                font-weight: 700;
+                margin-top: 16px;
+                padding: 8px 24px;
             }
         }
     }
@@ -501,7 +504,7 @@ footer {
     padding-right: 24px;
 }
 
-.nav-opaque { 
+.nav-opaque, .presale > nav { 
     background-color: white;
     border-bottom: 1px solid #d8d8d8;
 }
@@ -560,7 +563,7 @@ a.nav-link {
     padding: 0;
 }
 
-a.main-button {
+a.main-button, #mainNav a.main-button {
     border: 1px solid;
     display: inline-block;
     font-weight: 700;
