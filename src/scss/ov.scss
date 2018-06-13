@@ -379,6 +379,12 @@ header {
             &.position {
                 margin-bottom: 10px; 
             }
+
+            &.description {
+                max-width: 200px;
+                margin: 0 auto;
+            }
+
         }
     }
 }

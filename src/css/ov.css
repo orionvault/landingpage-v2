@@ -348,6 +348,11 @@ header img {
   margin-bottom: 10px;
 }
 
+#team .face p.description {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
 #presale_form .wrapper {
   padding: 40px 70px;
   border-radius: 5px;
