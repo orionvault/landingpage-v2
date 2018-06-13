@@ -310,6 +310,38 @@ header img {
   }
 }
 
+#team h2 {
+  margin: 60px 0 30px 0;
+}
+
+#team .section-desc {
+  margin-bottom: 20px;
+}
+
+#team .face {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#team .face h6 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+#team .face img {
+  border-radius: 50%;
+}
+
+#team .face p {
+  color: #666;
+}
+
+#team .face p.position {
+  margin-bottom: 10px;
+}
+
 #presale_form .wrapper {
   padding: 40px 70px;
   border-radius: 5px;
