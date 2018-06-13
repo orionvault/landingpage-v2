@@ -16,6 +16,10 @@ body.presale {
   background-color: #F7F8F9;
 }
 
+img {
+  box-sizing: initial;
+}
+
 h1 {
   font-size: 30px;
   margin: 72px 0 24px 0;
@@ -150,7 +154,6 @@ header img {
 
 #solution .frame .icon {
   height: 52px;
-  margin-bottom: 24px;
   width: 42px;
 }
 
@@ -168,6 +171,7 @@ header img {
   }
   #solution .frame .icon {
     height: 84px;
+    margin-bottom: 24px;
     width: 50px;
   }
 }
