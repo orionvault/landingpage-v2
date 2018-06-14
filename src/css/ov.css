@@ -312,13 +312,15 @@ header img {
   }
   #ico .ico-snippets {
     display: flex;
-    margin-bottom: 56px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
   }
   #ico .ico-snippets .ico-snippet {
     border-left: 1px solid #d5a23c;
-    flex: 33;
+    flex: 0 0 33.333333%;
+    margin: 28px 0;
   }
-  #ico .ico-snippets .ico-snippet:first-child {
+  #ico .ico-snippets .ico-snippet:nth-child(3n + 1) {
     border-left: none;
   }
 }
@@ -440,6 +442,37 @@ header img {
   height: 100%;
 }
 
+#meetus .row {
+  margin-bottom: 40px;
+}
+
+#meetus h4 {
+  margin: 8px 0;
+}
+
+#meetus p {
+  margin-top: 0;
+}
+
+@media (min-width: 992px) {
+  #meetus h4 {
+    margin: 8px 0 0 0;
+  }
+  #meetus .meetus-snippets {
+    display: flex;
+    margin: 28px 0;
+    flex-wrap: wrap;
+  }
+  #meetus .meetus-snippets .meetus-snippet {
+    border-left: 1px solid #d5a23c;
+    flex: 0 0 33.3333333%;
+    margin: 28px 0;
+  }
+  #meetus .meetus-snippets .meetus-snippet:nth-child(3n + 1) {
+    border-left: none;
+  }
+}
+
 footer {
   background-color: #4a4a4a;
   color: #ffffff;
@@ -529,11 +562,40 @@ footer .contact > h5 {
   }
 }
 
-a.nav-link {
+#meetUsTip {
+  top: 84px;
+  min-width: 400px;
+  width: 25%;
+  padding: 16px;
+  margin: auto;
+  background: white;
+  border: 1px solid #d8d8d8;
+}
+
+#meetUsTip h4 {
+  margin: 8px 0 0 0;
+}
+
+#meetUsTip .intermission {
+  margin: 16px auto;
+}
+
+.logos img {
+  cursor: pointer;
+  margin: 8px;
+}
+
+#mainNav a.nav-link, a.nav-link {
   color: #d8a734;
   font-size: 12px;
   letter-spacing: 0.75px;
   padding: 0;
+}
+
+@media (min-width: 992px) {
+  #mainNav a.nav-link, a.nav-link {
+    padding: 8px 24px;
+  }
 }
 
 a.main-button, #mainNav a.main-button {
