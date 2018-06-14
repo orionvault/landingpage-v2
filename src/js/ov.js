@@ -79,6 +79,12 @@
   handleTransition('#collapseSustainability', '#advantageSustainability');
   handleTransition('#collapseMover', '#advantageMover');
 
+  // Hide read more buttons after expanded
+  $(document).on('click','.learn-more',function(e) {
+      $(e.target).hide();
+  });
+  
+
   // Exapndable arrow pointing changes in Market Size and Contact & Info
  var handleArrow = function(sourceSelector, subjectSelector) {
     $(sourceSelector)
