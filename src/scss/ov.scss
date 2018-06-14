@@ -589,6 +589,26 @@ a.main-button, #mainNav a.main-button {
 .learn-more {
     color: #d8a734;
     font-weight: 700;
+
+    .read-more {
+        display: none; 
+    }
+
+    .read-less {
+        display: block; 
+    }
+}
+
+.collapsed {
+    .learn-more {
+        .read-more {
+            display: block; 
+        }
+
+        .read-less {
+            display: none; 
+        }
+    }
 }
 
 .intermission {

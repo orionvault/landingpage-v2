@@ -81,7 +81,7 @@
 
   // Hide read more buttons after expanded
   $(document).on('click','.learn-more',function(e) {
-      $(e.target).hide();
+      $(e.target).parent('learn-more').toggleClass('expanded');
   });
   
 
