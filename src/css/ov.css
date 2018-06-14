@@ -433,7 +433,7 @@ header img {
 
 #information .logos .logo {
   height: 48px;
-  margin: 12px;
+  margin: 12px auto;
 }
 
 #information .logos .logo img {
