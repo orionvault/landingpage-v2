@@ -216,9 +216,11 @@ header {
         }       
     }
 
-     @media (min-width: 992px) {   
-
-     }
+    @media (min-width: 992px) {   
+        .benefit {
+            
+        }
+    }
 }
 
 #product {
@@ -639,6 +641,7 @@ footer {
 #mainNav a.nav-link,  a.nav-link {
     color: #d8a734;
     font-size: 12px;
+    font-weight: 700;
     letter-spacing: 0.75px;
     padding: 0;
 
