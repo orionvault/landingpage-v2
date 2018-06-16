@@ -71,34 +71,13 @@ header {
         background: url('../img/mona_lisa.png') no-repeat center top;
         background-size: cover;
         display: flex;
-        min-height: calc(100vh - 64px);
+        min-height: 67vh;
 
         @media(min-width: 768px) {
             background: url('../img/mona_lisa_desktop.png') no-repeat center top;
             background-size: cover;
         }
 
-    }
-
-    .media-container {
-        border-top: 1px solid #d8d8d8;
-        border-bottom: 1px solid #d8d8d8;
-
-        & .row > .smedia {
-            padding: 0;
-            margin: 8px 0;  
-
-            div {
-                display: flex;
-                justify-content: space-around;
-                
-                img {
-                    cursor: pointer;
-                    margin: 8px 4px;
-                    padding: 0;
-                }
-            }
-        }
     }
 
     @media(min-width: 768px) {
@@ -434,7 +413,6 @@ header {
     }
 }
 
-
 #presale_form {
 
     .wrapper {                 
@@ -524,6 +502,10 @@ header {
         margin-bottom: 40px;
     }
 
+    .row:last-child {
+        margin-bottom: 0;
+    }
+
     h4 {
         margin: 8px 0;
     }
@@ -551,6 +533,26 @@ header {
 
             .meetus-snippet:nth-child(3n + 1) {
                 border-left: none;
+            }
+        }
+    }
+
+    .media-container {
+        border-top: 1px solid #d8d8d8;
+
+        & .row > .smedia {
+            padding: 0;
+            margin: 8px 0;  
+
+            div {
+                display: flex;
+                justify-content: space-around;
+                
+                img {
+                    cursor: pointer;
+                    margin: 8px 4px;
+                    padding: 0;
+                }
             }
         }
     }
@@ -646,24 +648,6 @@ footer {
             flex-direction: row-reverse;
         }
     }
-}
-
-#meetUsTip {
-    top: 84px;
-    min-width: 400px;
-    width: 25%;
-    padding: 16px;
-    margin: auto;
-    background: white;
-    border: 1px solid #d8d8d8;
-    
-    h4 {
-        margin: 8px 0 0 0;        
-    }
-
-    .intermission {
-        margin: 16px auto;
-    }    
 }
 
 
