@@ -60,19 +60,44 @@ a, a:focus, a:hover, a:visited {
   outline: 0;
 }
 
-header .container-fluid {
+header {
+  overflow-x: hidden;
+}
+
+header .container-fluid:first-child {
   align-items: center;
   background: url("../img/mona_lisa.png") no-repeat center top;
   background-size: cover;
   display: flex;
-  min-height: 66vh;
+  min-height: calc(100vh - 64px);
 }
 
 @media (min-width: 768px) {
-  header .container-fluid {
+  header .container-fluid:first-child {
     background: url("../img/mona_lisa_desktop.png") no-repeat center top;
     background-size: cover;
   }
+}
+
+header .media-container {
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+header .media-container .row > .smedia {
+  padding: 0;
+  margin: 8px 0;
+}
+
+header .media-container .row > .smedia div {
+  display: flex;
+  justify-content: space-around;
+}
+
+header .media-container .row > .smedia div img {
+  cursor: pointer;
+  margin: 8px 4px;
+  padding: 0;
 }
 
 @media (min-width: 768px) {
@@ -92,6 +117,12 @@ header .subtitle {
 
 header .main-button {
   margin-bottom: 45px;
+}
+
+header .phone-shots {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
 header img {
@@ -182,11 +213,12 @@ header img {
 
 #benefits .benefit {
   display: flex;
+  flex-direction: column;
   margin-top: 24px;
 }
 
 #benefits .benefit h4 {
-  margin: 0 8px 6px 0;
+  margin-bottom: 8px;
 }
 
 #benefits .benefit img {
@@ -199,7 +231,7 @@ header img {
 }
 
 #benefits .benefit .description p {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 #product .container-fluid {
@@ -253,6 +285,7 @@ header img {
 
 #marketBusiness .diagram {
   margin: 24px 0;
+  overflow: hidden;
 }
 
 #marketBusiness p {
@@ -260,9 +293,15 @@ header img {
 }
 
 #marketBusiness .rhombuses {
-  display: flex;
-  justify-content: center;
+  overflow: hidden;
   margin: 38px 0 26px 0;
+}
+
+#marketBusiness .rhombuses img {
+  width: 100%;
+  max-width: 312px;
+  margin: auto;
+  display: block;
 }
 
 #marketBusiness li {
@@ -293,11 +332,13 @@ header img {
 
 #ico .diagram {
   margin: 40px 0;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
 }
 
 #ico .main-button {
-  margin: 20px 0 56px 0;
+  margin: 32px 0 56px 0;
 }
 
 @media (min-width: 992px) {
@@ -356,6 +397,7 @@ header img {
 
 #team .face p.position {
   margin-bottom: 10px;
+  font-weight: 500;
 }
 
 #team .face p.description {
@@ -487,10 +529,6 @@ footer a {
   color: white;
 }
 
-footer .contact {
-  margin-bottom: 24px;
-}
-
 footer .contact div {
   display: flex;
 }
@@ -500,7 +538,7 @@ footer .contact img {
 }
 
 footer .contact > h5 {
-  margin-bottom: 8px;
+  margin-bottom: 0px;
 }
 
 .content-section {
@@ -549,6 +587,9 @@ footer .contact > h5 {
 }
 
 @media (min-width: 992px) {
+  .navbar .logo {
+    height: 34px;
+  }
   .navbar > .container > button {
     display: none;
   }
@@ -578,11 +619,6 @@ footer .contact > h5 {
 
 #meetUsTip .intermission {
   margin: 16px auto;
-}
-
-.logos img {
-  cursor: pointer;
-  margin: 8px;
 }
 
 #mainNav a.nav-link, a.nav-link {

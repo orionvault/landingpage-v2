@@ -64,18 +64,41 @@ a, a:focus, a:hover, a:visited {
 }
 
 header {
-    .container-fluid {
+    overflow-x: hidden;
+
+    .container-fluid:first-child {
         align-items: center;    
         background: url('../img/mona_lisa.png') no-repeat center top;
         background-size: cover;
         display: flex;
-        min-height: 66vh;
+        min-height: calc(100vh - 64px);
 
         @media(min-width: 768px) {
             background: url('../img/mona_lisa_desktop.png') no-repeat center top;
             background-size: cover;
         }
 
+    }
+
+    .media-container {
+        border-top: 1px solid #d8d8d8;
+        border-bottom: 1px solid #d8d8d8;
+
+        & .row > .smedia {
+            padding: 0;
+            margin: 8px 0;  
+
+            div {
+                display: flex;
+                justify-content: space-around;
+                
+                img {
+                    cursor: pointer;
+                    margin: 8px 4px;
+                    padding: 0;
+                }
+            }
+        }
     }
 
     @media(min-width: 768px) {
@@ -96,6 +119,12 @@ header {
 
     .main-button {
         margin-bottom: 45px;    
+    }
+
+    .phone-shots {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
     }
 
     img {
@@ -196,10 +225,11 @@ header {
     
     .benefit {
         display: flex;
+        flex-direction: column;
         margin-top: 24px;
 
         h4 {
-            margin: 0 8px 6px 0;
+            margin-bottom: 8px;
         }
 
         img {
@@ -211,15 +241,9 @@ header {
             margin: 0 16px;
 
             p {
-                margin-bottom: 16px;
+                margin-bottom: 8px;
             }
         }       
-    }
-
-    @media (min-width: 992px) {   
-        .benefit {
-            
-        }
     }
 }
 
@@ -278,6 +302,7 @@ header {
         
     .diagram {
         margin: 24px 0;
+        overflow: hidden;
     }
 
     p {
@@ -285,9 +310,15 @@ header {
     }
 
     .rhombuses {
-        display: flex;
-        justify-content: center;
+        overflow: hidden;
         margin: 38px 0 26px 0;
+
+        img {
+            width: 100%;
+            max-width: 312px;
+            margin: auto;
+            display: block;    
+        }
     }
 
     li {
@@ -320,11 +351,13 @@ header {
 
     .diagram {
         margin: 40px 0;
-        overflow: hidden;        
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
     }
 
     .main-button {
-        margin: 20px 0 56px 0;      
+        margin: 32px 0 56px 0;      
     }
 
     @media (min-width: 992px) {
@@ -390,6 +423,7 @@ header {
 
             &.position {
                 margin-bottom: 10px; 
+                font-weight: 500;
             }
 
             &.description {
@@ -536,8 +570,6 @@ footer {
     }
 
     .contact {
-        margin-bottom: 24px;
-
         div {
             display: flex;
         }
@@ -547,7 +579,7 @@ footer {
         }
 
         & > h5 {
-            margin-bottom: 8px;
+            margin-bottom: 0px;
         }
     }
 }
@@ -597,6 +629,9 @@ footer {
     }
 
     @media(min-width: 992px) {
+        .logo {
+            height: 34px;
+        }
         & > .container > button {
             display: none;
         }  
@@ -631,12 +666,6 @@ footer {
     }    
 }
 
-.logos {
-    img {
-        cursor: pointer;
-        margin: 8px;
-    }
-}
 
 #mainNav a.nav-link,  a.nav-link {
     color: #d8a734;
