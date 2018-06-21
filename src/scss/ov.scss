@@ -499,46 +499,6 @@ header {
     } 
 }
 
-#media {
-    padding-bottom: 40px;
-
-    ul {
-        margin: 0;
-    }
-
-    li {
-        line-height: 20px;
-        list-style-image: url("../img/bullet_white.svg");
-        margin-bottom: 16px;
-
-        &:hover {
-            list-style-image: url("../img/bullet.svg");
-
-            a {
-                color: #d5a23c;
-            }
-        }
-
-        span {
-            vertical-align: top;
-        }
-    }
-
-    @media (min-width: 768px) {
-        h2 {
-            margin-bottom: 30px;
-        }
-
-        h4 {
-            margin-top: 16px;
-        }
-
-        .vertical-bars > div:last-child {
-            border-left: 1px solid #d5a23c;
-        }
-    }        
-}
-
 #meetus {
     .row {
         margin-bottom: 40px;
@@ -556,6 +516,10 @@ header {
         margin-top: 0;
     }
 
+    .meetus-snippets {
+        padding-bottom: 40px;
+    }
+
     @media (min-width: 992px) {
 
         h4 {
@@ -564,13 +528,13 @@ header {
 
         .meetus-snippets {
             display: flex;
-            margin: 28px 0;
-            flex-wrap: wrap; 
+            flex-wrap: wrap;
+            padding-bottom: 12px;
 
             .meetus-snippet {
                 border-left: 1px solid #d5a23c;
                 flex: 0 0 33.3333333%;
-                margin: 28px 0;
+                margin: 0 0 28px 0;
             }
 
             .meetus-snippet:nth-child(3n + 1) {
@@ -598,6 +562,68 @@ header {
             }
         }
     }
+}
+
+#media {
+    .row {
+        margin-bottom: 40px;
+    }
+
+    .row:last-child {
+        margin-bottom: 0;
+    }
+
+    h4 {
+        margin: 8px 0;
+    }
+
+    p {
+        margin-top: 0;
+    }
+
+    .media-snippets {
+        padding-bottom: 40px;
+
+        .media-snippet {
+            margin-bottom: 40px;
+            & > a > div {
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    height: 40px;
+                    width: 40px;
+                    margin: 8px 20px;
+                }
+            }       
+        } 
+
+        .media-snippet:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (min-width: 992px) {
+
+        h4 {
+            margin: 8px 0 0 0;
+        }
+
+        .media-snippets {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+            .media-snippet {
+                flex: 0 0 50%;
+                margin: 0 0 28px 0;
+            }
+
+            .media-snippet > a > div {
+                flex-direction: row;    
+            }
+        }
+    }    
 }
 
 footer {
