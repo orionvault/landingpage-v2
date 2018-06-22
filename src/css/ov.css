@@ -450,13 +450,12 @@ header img {
 
 #information .logos {
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 #information .logos .logo {
-  height: 90px;
-  padding: 0 20px;
+  height: 40px;
+  padding: 0 10px;
   margin: 12px auto;
 }
 
