@@ -528,6 +528,7 @@ header {
         .meetus-snippets {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             padding-bottom: 12px;
 
             .meetus-snippet {

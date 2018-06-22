@@ -491,6 +491,7 @@ header img {
   #meetus .meetus-snippets {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding-bottom: 12px;
   }
   #meetus .meetus-snippets .meetus-snippet {
