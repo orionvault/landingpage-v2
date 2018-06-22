@@ -498,6 +498,7 @@ header {
     } 
 }
 
+
 #meetus {
     .row {
         margin-bottom: 40px;
@@ -764,4 +765,14 @@ a.main-button, #mainNav a.main-button {
     border-top: 1px solid #d5a23c;
     width: 50px;
     margin: 32px auto;
+}
+
+.filtered {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.on-over-color:hover {
+    -webkit-filter: none;
+    filter: none;
 }
