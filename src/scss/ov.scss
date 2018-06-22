@@ -581,20 +581,21 @@ header {
     }
 
     .media-snippets {
+        display: flex;
+        flex-wrap: wrap;
         padding-bottom: 40px;
 
         .media-snippet {
-            margin-bottom: 40px;
-            & > a > div {
-                display: flex;
-                flex-direction: column;
+            margin: 12px auto;
 
-                img {
-                    height: 40px;
-                    width: 40px;
-                    margin: 8px 20px;
-                }
-            }       
+            div {
+                padding: 0 12px;
+            }
+
+            img {
+                height: 50px;
+                max-width: 100%;
+            }
         } 
 
         .media-snippet:last-child {
@@ -612,14 +613,10 @@ header {
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
+            justify-content: space-around;
 
             .media-snippet {
-                flex: 0 0 50%;
                 margin: 0 0 28px 0;
-            }
-
-            .media-snippet > a > div {
-                flex-direction: row;    
             }
         }
     }    
