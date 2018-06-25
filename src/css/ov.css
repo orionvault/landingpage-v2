@@ -427,6 +427,54 @@ header img {
   }
 }
 
+#wallpaper_form .wrapper {
+  padding: 40px 70px;
+  background-color: #fff;
+  margin-top: 100px;
+}
+
+#wallpaper_form .wrapper form {
+  width: 100%;
+}
+
+#wallpaper_form .wrapper form input[type="text"], #wallpaper_form .wrapper form input[type="email"], #wallpaper_form .wrapper form input[type="number"], #wallpaper_form .wrapper form select {
+  width: 100%;
+  background-color: #F1F3F4;
+  color: #000;
+  border-radius: 5px;
+  border: none;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+#wallpaper_form .wrapper form input[type="submit"] {
+  background-color: #fff;
+  border: 1px solid;
+  color: #d8a734;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 0.75px;
+  display: inline-block;
+  font-weight: 700;
+  margin-top: 16px;
+  padding: 8px 24px;
+}
+
+#wallpaper_form .wrapper #wallpaperBox img {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  #wallpaper_form .wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+  }
+  #wallpaper_form .wrapper h1 {
+    margin-top: 20px;
+  }
+}
+
 #message {
   text-align: center;
   font-size: 20px;

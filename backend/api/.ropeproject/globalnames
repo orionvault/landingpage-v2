@@ -1,0 +1,7 @@
+€}q(Uevent.migrations]U*presale.migrations.0002_auto_20180625_2118]qU	MigrationqaU(event.migrations.0003_auto_20180625_2124]qhaUapi.urls]q(UurlpatternsqUrouterqeUpresale.models]qUPresaleOrderq	aUapi]Upresale.admin]q
+UAdminPresaleqaUapi.settings]q(U	DATABASESqUROOT_URLCONFqULANGUAGE_CODEqUUSE_I18NqU
+SECRET_KEYqUBASE_DIRqU	TEMPLATESqU	TIME_ZONEqUCORS_ORIGIN_ALLOW_ALLqUWSGI_APPLICATIONqUALLOWED_HOSTSqUAUTH_PASSWORD_VALIDATORSqULOGGINGqU
+STATIC_URLqUUSE_L10NqUDEBUGqUUSE_TZqUINSTALLED_APPSqU
+MEDIA_ROOTqU
+MIDDLEWAREq UREST_FRAMEWORKq!U	MEDIA_URLq"eUevent]Uevent.models]q#(UWallpaperImageq$U	Wallpaperq%Uget_file_pathq&eUevent.admin]q'(UWallpaperImageInlineq(UAdminWallpaperq)eUpresale.apps]q*UPresaleConfigq+aUpresale.serializers]q,UPresaleSerializerq-aU(event.migrations.0004_auto_20180625_2147]q.haUpresale.tests]Uevent.views]q/(Uloggerq0UWallpaperViewSetq1eUapi.wsgi]q2Uapplicationq3aUevent.serializers]q4(UWallpaperSerializerq5UWallpaperImageSerializerq6eUevent.tests]U.event.migrations.0002_wallpaperimage_wallpaper]q7haUpresale]Uevent.migrations.0001_initial]q8haUpresale.migrations.0001_initial]q9haUpresale.views]q:UPresaleViewSetq;aU
+event.apps]q<UEventConfigq=aUpresale.migrations]u.
