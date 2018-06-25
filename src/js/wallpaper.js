@@ -7,8 +7,15 @@
     messageBox.text(msg);
   }
 
+  var hideMessage = function() {
+    var messageBox = $('#message');
+    messageBox.removeClass("error success");
+    messageBox.text('');
+  }
+
   $('#wallpaperForm').submit(function(event) {
       event.preventDefault();
+      hideMessage();
 
       var pin_code = $('#wallpaperForm input[name=pin_code]').val();
 
