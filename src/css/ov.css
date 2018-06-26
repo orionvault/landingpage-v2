@@ -464,6 +464,30 @@ header img {
   width: 100%;
 }
 
+#wallpaper_form h3 {
+  margin-bottom: 0px;
+}
+
+#wallpaper_form #wallpaper_cert {
+  margin-bottom: 20px;
+}
+
+#wallpaper_form #wallpaper_cert a {
+  color: #DAAE46;
+}
+
+#wallpaper_form #wallpaper_images .mx-auto {
+  margin-bottom: 20px;
+}
+
+#wallpaper_form .wallpaper-samples img {
+  width: 100%;
+}
+
+#wallpaper_form .carousel-inner {
+  background: #000;
+}
+
 @media (max-width: 992px) {
   #wallpaper_form .wrapper {
     padding-left: 30px;

@@ -13,5 +13,5 @@ class WallpaperSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Wallpaper
-        fields = ('title', 'pin_code', 'wallpaper_images')
-        read_only_fields = ('title', 'wallpaper_images')
+        fields = ('title', 'pin_code', 'wallpaper_images', 'cert')
+        read_only_fields = ('title', 'wallpaper_images', 'cert')

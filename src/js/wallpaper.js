@@ -16,6 +16,7 @@
   $('#wallpaperForm').submit(function(event) {
       event.preventDefault();
       hideMessage();
+      $("#wallpaper_images").text('');
 
       var pin_code = $('#wallpaperForm input[name=pin_code]').val();
 
@@ -29,30 +30,22 @@
           $('#wallpaperForm')[0].reset();
           console.log(data);
           $('#wallpaper_title').text(data.title);
+          var c = $('<h5><a href="' + data.cert + '" target="_blank">Download certificate</a></h5>');
+          $('#wallpaper_cert').html(c);
 
           var mapDeviceName = function(dev_name) {
-              if(dev_name === 'iphone6') {
-                return 'iPhone 6';
-              } else if (dev_name === 'iphone6plus') {
-                return 'iPhone 6+';
+              if(dev_name === 'iphone') {
+                  return 'iPhone 6/7/8';
+              } else if (dev_name === 'iphoneplus') {
+                  return 'iPhone 6+/7+/8+';
               } else if (dev_name === 'hd') {
                 return 'HD';
               } else if (dev_name === 'uhd') {
                 return 'UHD';
-              } else if (dev_name === 'iphone7') {
-                return 'iPhone 7';
-              } else if (dev_name === 'iphone7plus') {
-                return 'iPhone 7+';
-              } else if (dev_name === 'iphone8') {
-                return 'iPhone 8';
-              } else if (dev_name === 'iphone8plus') {
-                return 'iPhone 8+';
               } else if (dev_name === 'iphonex') {
                 return 'iPhone X';
-              } else if (dev_name === 'samsung_s8') {
-                return 'Samsung S8/S8 Plus';
-              } else if (dev_name === 'samsung_s9') {
-                return 'Samsung S9/S9 Plus';
+              } else if (dev_name === 'samsung') {
+                return 'Samsung S8/S8 Plus or S9/S9 Plus';
               } else {
                 return 'Other';
               }
@@ -61,7 +54,7 @@
           for(var idx=0; idx<data.wallpaper_images.length; idx++) {
               console.log('loop', idx);
             var i = data.wallpaper_images[idx]; 
-            var t = $('<div class="col-md-3 col-sm-6 mx-auto"><a href="' + i.img + '" target="_blank"><img src="' + i.img + '"></a><p>' + mapDeviceName(i.device) + '</p></div>');
+            var t = $('<div class="col-md-4 col-sm-6 mx-auto"><a href="' + i.img + '" target="_blank"><img src="' + i.img + '"></a><p>' + mapDeviceName(i.device) + '</p></div>');
             $("#wallpaper_images").append(t);
           }
 
@@ -73,6 +66,8 @@
           showMessage('error', 'Looks like the code is invalid. Try again.');
       });
   });
+
+  $('.carousel').carousel();
 
 
 })(jQuery); // End of use strict

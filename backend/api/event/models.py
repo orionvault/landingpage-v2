@@ -13,7 +13,9 @@ def get_file_path(instance, filename):
 class Wallpaper(models.Model):
     title = models.CharField(max_length=200, verbose_name=_('Title'))
     pin_code = models.CharField(max_length=6, verbose_name=_('PIN Code'))
-    last_visit = models.DateTimeField(blank=True, null=True,
+    cert = models.FileField(upload_to=get_file_path,
+                            verbose_name=_('Certificate file'))
+    last_visit = models.DateTimeField(blank=True, null=True, editable=False,
                                       verbose_name=_('Last visited'))
     created_at = models.DateTimeField(auto_now_add=True,
                                       verbose_name=_('Date created'))
@@ -33,15 +35,10 @@ class WallpaperImage(models.Model):
     DEVICES = (
         ('hd', _("HD")),
         ('uhd', _("UHD")),
-        ('iphone6', _("iPhone 6")),
-        ('iphone6plus', _("iPhone 6+")),
-        ('iphone7', _("iPhone 7")),
-        ('iphone7plus', _("iPhone 7+")),
-        ('iphone8', _("iPhone 8")),
-        ('iphone8plus', _("iPhone 8+")),
+        ('iphone', _("iPhone 6/7/8")),
+        ('iphoneplus', _("iPhone 6+/7+/8+")),
         ('iphonex', _("iPhone X")),
-        ('samsung_s8', _("Samsung S8/S8 Plus")),
-        ('samsung_s9', _("Samsung S9/S9 Plus"))
+        ('samsung', _("Samsung S8/S8 Plus or S9/S9 Plus"))
     )
 
     wallpaper = models.ForeignKey('Wallpaper', on_delete=models.CASCADE,
