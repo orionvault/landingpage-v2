@@ -22,6 +22,8 @@
     <!-- Custom styles for this template -->
     <link href="css/ov.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+
   </head>
 
   <body class="landing">
@@ -814,11 +816,15 @@
           <div class="col-12">
               <div class="contact">
                 <h5><a href="mailto:contact@orionvault.com">contact@orionvault.com</a></h5>
+                <h5><span style="font-size: 30px; position: relative; top: 8px;">&copy;</span> 2018 OrionVault</h5>
               </div>
           </div>
           <div class="col-12">
+              <br>
               <div class="contact">
-                  <h5><span style="font-size: 30px; position: relative; top: 8px;">&copy;</span> 2018 OrionVault</h5>
+                  <a href="/terms.html">Terms of Use</a> | 
+                  <a href="/cookies.html">Cookie Policy</a> |
+                  <a href="/privacy.html">Privacy Policy</a>
               </div>
           </div>
         </div>
@@ -834,5 +840,24 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/ov.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+          "popup": {
+                "background": "#4a4a4a"
+              },
+          "button": {
+                "background": "#d5a23c"
+              }
+        },
+      "theme": "classic",
+      "content": {
+          "href": "https://orionvault.com/cookies.html"
+        }
+    })});
+    </script>
   </body>
 </html>

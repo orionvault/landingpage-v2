@@ -383,6 +383,10 @@ header img {
   margin: 0 auto;
 }
 
+#presale_form {
+  margin-bottom: 30px;
+}
+
 #presale_form .wrapper {
   padding: 40px 70px;
   background-color: #fff;
@@ -425,6 +429,10 @@ header img {
   #presale_form .wrapper h1 {
     margin-top: 20px;
   }
+}
+
+#wallpaper_form {
+  margin-bottom: 30px;
 }
 
 #wallpaper_form .wrapper {
@@ -497,6 +505,16 @@ header img {
   #wallpaper_form .wrapper h1 {
     margin-top: 20px;
   }
+}
+
+#policypage {
+  margin-bottom: 30px;
+}
+
+#policypage .wrapper {
+  padding: 40px 70px;
+  background-color: #fff;
+  margin-top: 100px;
 }
 
 #message {
@@ -661,6 +679,14 @@ footer h2 {
 }
 
 footer a {
+  color: white !important;
+}
+
+footer a:hover {
+  color: #DAAE46 !important;
+}
+
+footer a:active, footer a:focus {
   color: white;
 }
 

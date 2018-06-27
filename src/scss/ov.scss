@@ -414,6 +414,7 @@ header {
 }
 
 #presale_form {
+    margin-bottom: 30px;
 
     .wrapper {                 
         padding: 40px 70px;         
@@ -463,6 +464,7 @@ header {
 }
 
 #wallpaper_form {
+    margin-bottom: 30px;
 
     .wrapper {                 
         padding: 40px 70px;         
@@ -542,6 +544,18 @@ header {
                 margin-top: 20px; 
             }
         }
+    }
+}
+
+#policypage {
+
+    margin-bottom: 30px;
+
+    .wrapper {                 
+        padding: 40px 70px;         
+        
+        background-color: #fff;
+        margin-top: 100px;
     }
 }
 
@@ -717,7 +731,15 @@ footer {
     }
 
     a {
-        color: white;
+        color: white !important;
+
+        &:hover {
+            color: $yellow !important; 
+        }
+
+        &:active, &:focus {
+            color: white;
+        }
     }
 
     .contact {
