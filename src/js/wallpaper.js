@@ -54,7 +54,7 @@
           for(var idx=0; idx<data.wallpaper_images.length; idx++) {
               console.log('loop', idx);
             var i = data.wallpaper_images[idx]; 
-            var t = $('<div class="col-md-4 col-sm-6 mx-auto"><a href="' + i.img + '" target="_blank"><img src="' + i.img + '"></a><p>' + mapDeviceName(i.device) + '</p></div>');
+            var t = $('<div class="col-md-4 col-sm-6 mx-auto"><a href="' + i.img + '" download="orionvault_art.jpg"><img src="' + i.img + '"></a><p>' + mapDeviceName(i.device) + '</p></div>');
             $("#wallpaper_images").append(t);
           }
 
