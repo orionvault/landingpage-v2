@@ -873,7 +873,6 @@
     <script src="js/ov.min.js"></script>
 
     <script>
-        $.i18n.debug = true;
         var i18n = $.i18n({locale: 'en'}).load( {
             en: {
                 "menu_white_paper": "WHITE PAPER",
@@ -1192,6 +1191,19 @@
 
         } );
 
+        var detectLanguage = function() {
+            var userLang = navigator.language || navigator.userLanguage;
+        
+            if( userLang === 'jp') {
+                return 'jp'; 
+            } else {
+                return 'en;' 
+            }
+        }
+        var browserLang = detectLanguage();
+
+
+        $.i18n().locale = browserLang;
         $('body').i18n();
 
         var switchLanguage = function(l) {

@@ -29,11 +29,11 @@
       })
       .done(function(data) {
           $('#presaleForm')[0].reset();
-          showMessage('success', 'Registration form sent. Thank you for your interest.');
+          showMessage('success', $.i18n("presale_success"));
       })
       .fail(function(data) {
           $('#presaleForm')[0].reset();
-          showMessage('error', 'There was an error during sendind data. Try again later.');
+          showMessage('error', $.i18n("presale_error"));
       });
   });
 

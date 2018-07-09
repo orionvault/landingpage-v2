@@ -34,37 +34,43 @@
           <div>
             <ul class="navbar-nav ml-auto">
               <li class="nav-item d-lg-none">
-                <a class="nav-link" href="files/Orion Vault White Paper.pdf" target="_blank">WHITE PAPER</a>
+                <a class="nav-link" href="files/Orion Vault White Paper.pdf" target="_blank" data-i18n="menu_white_paper"></a>
               </li>
               <li class="nav-item d-lg-none">
-                <a class="nav-link" href="files/Orion Vault One Pager.pdf" target="_blank">ONE PAGER</a>
+                <a class="nav-link" href="files/Orion Vault One Pager.pdf" target="_blank" data-i18n="menu_one_pager">ONE PAGER</a>
               </li>              
               <li class="nav-item d-lg-none">
-                <a class="nav-link" href="presale.html" target="_blank">REGISTER FOR PRESALE</a>
+                <a class="nav-link" href="presale.html" target="_blank" data-i18n="menu_register">REGISTER FOR PRESALE</a>
               </li>
               <li class="nav-item d-lg-none">
-                <a class="nav-link" href="http://gallery.orionvault.com" target="_blank">BIT-GALLERY</a>
+                <a class="nav-link" href="http://gallery.orionvault.com" target="_blank" data-i18n="menu_bit_gallery">BIT-GALLERY</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/wallpaper.html">WALLART</a>
+                <a class="nav-link js-scroll-trigger" href="/wallpaper.html" data-i18n="menu_wallart">WALLART</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#product">PRODUCT</a>
+                <a class="nav-link js-scroll-trigger" href="#product" data-i18n="menu_product">PRODUCT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#team">TEAM</a>
+                <a class="nav-link js-scroll-trigger" href="#team" data-i18n="menu_team">TEAM</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#meetus">MEET US</a>
+                <a class="nav-link js-scroll-trigger" href="#meetus" data-i18n="menu_meet_us">MEET US</a>
               </li>
               <li class="nav-item d-none d-lg-block">
-                <a class="nav-link" href="http://gallery.orionvault.com" target="_blank">BIT-GALLERY</a>
+                <a class="nav-link" href="http://gallery.orionvault.com" target="_blank" data-i18n="menu_bit_gallery">BIT-GALLERY</a>
               </li>
               <li class="nav-item d-none d-lg-block">
-                <a class="nav-link" href="files/Orion Vault One Pager.pdf" target="_blank">ONE PAGER</a>
+                <a class="nav-link" href="files/Orion Vault One Pager.pdf" target="_blank" data-i18n="menu_one_pager">ONE PAGER</a>
               </li>
               <li class="nav-item d-none d-lg-block">
-                <a class="nav-link main-button" href="files/Orion Vault White Paper.pdf" target="_blank">WHITE PAPER</a>
+                <a class="nav-link main-button" href="files/Orion Vault White Paper.pdf" target="_blank" data-i18n="menu_white_paper">WHITE PAPER</a>
+              </li>
+              <li class="nav-item">
+                  <select id="langOptions">
+                      <option value="en">English</option>
+                      <option value="jp">日本語</option>
+                  </select>
               </li>
             </ul>      
           </div>
@@ -76,21 +82,21 @@
     <section id="presale_form" class="bottom-gap text-center">
         <div class="container">  
             <div class="col-md-8 mx-auto wrapper">
-                <h1>Registration for Private Presale</h1>
-                <p>Thank you for your interest in participating in the Orion Vault Private Presale. We are building the infrastructure of the future of art investments and donations. We value the support we've received to date and welcome you to our community.</p> 
+                <h1 data-i18n="presale_head">Registration for Private Presale</h1>
+                <p data-i18n="presale_text_1">Thank you for your interest in participating in the Orion Vault Private Presale. We are building the infrastructure of the future of art investments and donations. We value the support we've received to date and welcome you to our community.</p> 
 
-                <p>The exact details of the Orion Vault Private Presale have not yet been announced. Please fill out this form if you are interested in participating and want to be updated first. Please note that this is only an indication of interest, submitting this form doesn’t guarantee an allocation.</p> 
+                <p data-i18n="presale_text_2">The exact details of the Orion Vault Private Presale have not yet been announced. Please fill out this form if you are interested in participating and want to be updated first. Please note that this is only an indication of interest, submitting this form doesn’t guarantee an allocation.</p> 
 
                 <form id="presaleForm">
                     <div class="row">
                         <div class="col-md-6 ">   
-                            <input type="text" name="first_name" placeholder="Name" required>
+                            <input type="text" name="first_name" placeholder="Name" required data-i18n="presale_form_1">
                         </div>     
                         <div class="col-md-6 ">         
-                            <input type="text" name="last_name" placeholder="Surname" required>
+                            <input type="text" name="last_name" placeholder="Surname" required data-i18n="presale_form_2">
                         </div>     
                         <div class="col-md-12">         
-                            <input type="email" name="email" placeholder="Email address" required>
+                            <input type="email" name="email" placeholder="Email address" required data-i18n="presale_form_3">
                         </div>     
                         <div class="col-md-12">         
                             <select placeholder="Country of Residence" class="residence" required>
@@ -347,22 +353,22 @@
                             </select>                           
                         </div>
                         <div class="col-md-8">          
-                            <input type="number" name="contribution" placeholder="Contribution amount"  required>                                                                                                                                                                                                  
+                            <input type="number" name="contribution" placeholder="Contribution amount" required data-i18n="presale_form_5">
                         </div>
                         <div class="col-md-4">          
                             <select placeholder="Currency" required class="currency">
-                                <option value="">Currency</option>
-                                <option value="usd">USD</option>
-                                <option value="btc">BTC</option>
-                                <option value="eth">ETH</option>
+                                <option value="" data-i18n="presale_form_6">Currency</option>
+                                <option value="usd" data-i18n="">USD</option>
+                                <option value="btc" data-i18n="">BTC</option>
+                                <option value="eth" data-i18n="">ETH</option>
                             </select>                           
                         </div>
                         <div class="col-md-12">         
                             <select placeholder="Investor type" required class="investor_type">
-                                <option value=''>Investor type</option>
-                                <option value="individual">Individual</option>
-                                <option value="investor">Accredited investor</option>
-                                <option value="fund">Fund</option>
+                                <option value='' data-i18n="presale_form_7">Investor type</option>
+                                <option value="individual" data-i18n="">Individual</option>
+                                <option value="investor" data-i18n="">Accredited investor</option>
+                                <option value="fund" data-i18n="">Fund</option>
                             </select>                           
                         </div>
 
@@ -371,7 +377,7 @@
                         </div>
 
                         <div class="col-md-12 text-center">
-                            <input type="submit" value="REGISTER FOR PRESALE">
+                            <input type="submit" value="REGISTER FOR PRESALE" data-i18n="menu_register">
                         </div>
                     </div>
                 </form>
@@ -384,7 +390,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2>CONTACT</h2>
+            <h2 data-i18n="contact_head">CONTACT</h2>
           </div>
         </div>
         <div class="row">
@@ -397,9 +403,9 @@
           <div class="col-12">
               <br>
               <div class="contact">
-                  <a href="/terms.html">Terms of Use</a> | 
-                  <a href="/cookies.html">Cookie Policy</a> |
-                  <a href="/privacy.html">Privacy Policy</a>
+                  <a href="/terms.html" data-i18n="contact_terms">Terms of Use</a> | 
+                  <a href="/cookies.html" data-i18n="contact_cookies">Cookie Policy</a> |
+                  <a href="/privacy.html" data-i18n="contact_privacy">Privacy Policy</a>
               </div>
           </div>
         </div>
@@ -414,9 +420,117 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-i18n/jquery.i18n.js"></script>
+    <script src="vendor/jquery-i18n/jquery.i18n.messagestore.js"></script>
+    <script src="vendor/jquery-i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="vendor/jquery-i18n/jquery.i18n.parser.js"></script>
+    <script src="vendor/jquery-i18n/jquery.i18n.emitter.js"></script>
+    <script src="vendor/jquery-i18n/jquery.i18n.language.js"></script>
+
     <!-- Custom scripts for this template -->
     <script src="js/ov.min.js"></script>
     <script src="js/presale.min.js"></script>
+
+    <script>
+        var i18n = $.i18n({locale: 'en'}).load( {
+            en: {
+                "menu_white_paper": "WHITE PAPER",
+                "menu_register": "REGISTER FOR PRESALE",
+                "menu_bit_gallery": "BIT-GALLERY",
+                "menu_one_pager": "ONE PAGER",
+                "menu_wallart": "WALLART",
+                "menu_product": "PRODUCT",
+                "menu_team": "TEAM",
+                "menu_meet_us": "MEET US",
+                "contact_head": "CONTACT",
+                "contact_terms": "Terms of Use",
+                "contact_cookies": "Cookie Policy",
+                "contact_privacy": "Privacy Policy",
+                "presale_head": "Registration for Private Presale",
+                "presale_text_1": "Thank you for your interest in participating in the Orion Vault Private Presale. We are building the infrastructure of the future of art investments and donations. We value the support we've received to date and welcome you to our community.",
+                "presale_text_2": "The exact details of the Orion Vault Private Presale have not yet been announced. Please fill out this form if you are interested in participating and want to be updated first. Please note that this is only an indication of interest, submitting this form doesn’t guarantee an allocation.",
+                "presale_form_1": "Name",
+                "presale_form_2": "Surname",
+                "presale_form_3": "Email address",
+                "presale_form_4": "Country of Residence",
+                "presale_form_5": "Contribution amount",
+                "presale_form_6": "Currency",
+                "presale_form_7": "Investor type",
+                "presale_success": "Registration form sent. Thank you for your interest.",
+                "presale_error": "There was an error during sendind data. Try again later."
+            },
+            jp: {
+                "menu_white_paper": "ホワイトペーパー",
+                "menu_register": "プレセールに登録",
+                "menu_bit_gallery": "ビットギャラリー",
+                "menu_one_pager": "エグゼクティブサマリー",
+                "menu_wallart": "ウォールアート",
+                "menu_product": "プロダクト",
+                "menu_team": "チーム",
+                "menu_meet_us": "イベント",
+                "contact_head": "お問い合わせ",
+                "contact_terms": "利用規約",
+                "contact_cookies": "Cookieポリシー",
+                "contact_privacy": "プライバシーに関する方針",
+                "presale_head": "プライベートのプレセールに登録する",
+                "presale_text_1": " Orion Vaultのプライベートプリセールにご関心をお寄せいただきありがとうございます。弊社は未来のアート投資と寄付のためのインフラストラクチャーを構築しています。私たちは今日まで受け取った皆様からのサポートに感謝し、皆様をOrion Vaultコミュニティへ歓迎します。",
+                "presale_text_2": "Orion Vaultプライベートプレセールの詳細はまだ発表されていません。参加をご希望される場合、こちらのフォームにご入力いただくと更新情報をいち早くお届けします。ただし、このフォームへのご記入は、プレセールへのご参加が保証されるものではありませんのでご注意ください。",
+                "presale_form_1": "名前",
+                "presale_form_2": "苗字",
+                "presale_form_3": "メールアドレス",
+                "presale_form_4": "住んでいる国",
+                "presale_form_5": "寄付金額",
+                "presale_form_6": "通貨",
+                "presale_form_7": "投資の種類",
+                "presale_success": "登録フォームが送信されました。ご関心をお寄せいただきありがとうございます。",
+                "presale_error": "データ送信中にエラーが発生しました。後でもう一度試してください。"
+            }
+
+        } );
+
+        var detectLanguage = function() {
+            var userLang = navigator.language || navigator.userLanguage;
+        
+            if( userLang === 'jp') {
+                return 'jp'; 
+            } else {
+                return 'en;' 
+            }
+        }
+        var browserLang = detectLanguage();
+
+
+        $.i18n().locale = browserLang;
+        $('body').i18n();
+
+        var switchLanguage = function(l) {
+            $.i18n().locale = l;
+            $('body').i18n();
+        };
+
+        var translateInputs = function() {
+            $("input[type=text], input[type=number], input[type=email], select").each(function(ev) {
+                if(!$(this).val()) { 
+                    var fKey = $(this).attr("data-i18n");
+                    var fValue = $.i18n(fKey);
+                    $(this).attr("placeholder", fValue);
+                    // $(this).attr("placeholder", "Type your answer here");
+                }
+            }); 
+
+            // Translate submit button
+            $("input[type=submit]").attr("value", $.i18n("menu_register"));
+        }
+
+        $('#langOptions').change(function() {
+            var selectedLang = $("#langOptions option:selected")[0].value;
+            switchLanguage(selectedLang);
+            translateInputs();
+            console.log($.i18n( 'presale_form_1' ));
+        });
+        
+    </script>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
     <script>
