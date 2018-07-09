@@ -331,8 +331,37 @@ header {
     .diagram {
         margin: 40px 0;
         display: flex;
-        justify-content: center;
-        overflow: hidden;
+        flex-direction: column;
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h4 {
+                font-weight: bold;
+                margin: 20px 8px;
+            }
+        }
+
+        div:first-child {
+            background-color: #fddf7f;
+            flex: 0 0 32%;            
+        }
+
+        div:last-child {
+            background-color: #f1c231;
+            flex: 0 0 68%;
+            height: 126px;
+        }
+
+        @media (min-width: 992px) {
+            flex-direction: row;
+            
+            div:last-child {
+                height: auto;
+            }
+        }
     }
 
     .main-button {
