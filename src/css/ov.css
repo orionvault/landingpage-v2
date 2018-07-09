@@ -832,3 +832,19 @@ a.main-button, #mainNav a.main-button {
   -webkit-filter: none;
   filter: none;
 }
+
+#langOptions {
+  padding: 5px 10px;
+  color: #d8a734;
+  font-weight: bold;
+  border: 1px solid #DAAE46;
+  height: 36px;
+  border-radius: 0px;
+  background: #fff;
+  margin-left: 10px;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+}
