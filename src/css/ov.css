@@ -262,6 +262,47 @@ header img {
   padding-bottom: 40px;
 }
 
+#marketBusiness h3 {
+  margin: 0;
+}
+
+#marketBusiness h4 {
+  margin: 8px 0 18px 0;
+}
+
+#marketBusiness p {
+  margin-top: 24px;
+}
+
+#marketBusiness .main-button {
+  margin: 32px 0 56px 0;
+}
+
+@media (min-width: 992px) {
+  #marketBusiness h4 {
+    margin: 8px 0 0 0;
+  }
+  #marketBusiness p {
+    margin-top: 0;
+  }
+  #marketBusiness .diagram {
+    margin: 36px 0;
+  }
+  #marketBusiness .market-snippets {
+    display: flex;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+  #marketBusiness .market-snippets .market-snippet {
+    border-left: 1px solid #d5a23c;
+    flex: 0 0 33.333333%;
+    margin: 28px 0;
+  }
+  #marketBusiness .market-snippets .market-snippet:nth-child(3n + 1) {
+    border-left: none;
+  }
+}
+
 #marketBusiness .diagram {
   margin: 24px 0;
   overflow: hidden;
@@ -269,18 +310,6 @@ header img {
 
 #marketBusiness p {
   margin-bottom: 16px;
-}
-
-#marketBusiness .rhombuses {
-  overflow: hidden;
-  margin: 38px 0 26px 0;
-}
-
-#marketBusiness .rhombuses img {
-  width: 100%;
-  max-width: 312px;
-  margin: auto;
-  display: block;
 }
 
 #marketBusiness li {
