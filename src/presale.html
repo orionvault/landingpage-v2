@@ -49,13 +49,13 @@
                 <a class="nav-link js-scroll-trigger" href="/wallpaper.html" data-i18n="menu_wallart">WALLART</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#product" data-i18n="menu_product">PRODUCT</a>
+                <a class="nav-link js-scroll-trigger" href="/#product" data-i18n="menu_product">PRODUCT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#team" data-i18n="menu_team">TEAM</a>
+                <a class="nav-link js-scroll-trigger" href="/#team" data-i18n="menu_team">TEAM</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#meetus" data-i18n="menu_meet_us">MEET US</a>
+                <a class="nav-link js-scroll-trigger" href="/#meetus" data-i18n="menu_meet_us">MEET US</a>
               </li>
               <li class="nav-item d-none d-lg-block">
                 <a class="nav-link" href="http://gallery.orionvault.com" target="_blank" data-i18n="menu_bit_gallery">BIT-GALLERY</a>
@@ -70,6 +70,8 @@
                   <select id="langOptions">
                       <option value="en">English</option>
                       <option value="jp">日本語</option>
+                      <option value="zh">中文</option>
+                      <option value="kr">朝鲜的</option>
                   </select>
               </li>
             </ul>      
@@ -485,6 +487,56 @@
                 "presale_form_7": "投資の種類",
                 "presale_success": "登録フォームが送信されました。ご関心をお寄せいただきありがとうございます。",
                 "presale_error": "データ送信中にエラーが発生しました。後でもう一度試してください。"
+            },
+            zh: {
+				'menu_white_paper': "白皮书",
+				'menu_register': "预售注册",
+				'menu_bit_gallery': "位图库",
+				'menu_wallart': "艺术墙",
+				'menu_product': "产品",
+				'menu_team': "团队",
+				'menu_meet_us': "关于我们",
+				'contact_head': "联系方式",
+				'contact_terms': "使用条款",
+				'contact_cookies': "Cookie政策",
+				'contact_privacy': "隐私政策",
+				'presale_head': "私人预售登记",
+				'presale_text_1': "谢谢您有兴趣参加Orion Vault Private Presale。 我们正在致力于未来艺术的基础设施建设的投资和捐赠。 我们非常重视截止到目前为止所获得的支持并欢迎您加入我们的社区。",
+				'presale_text_2': "有关Orion Vault私人预售的详细信息尚未公布。 如果您有兴趣参与并希望得到最新消息，请填写此表。 但是请注意，这仅仅表示您有兴趣，提交此表格并不能保证分配。",
+				'presale_form_1': "名字",
+				'presale_form_2': "姓",
+				'presale_form_3': "邮箱",
+				'presale_form_4': "居住国家",
+				'presale_form_5': "捐献金额",
+				'presale_form_6': "币种",
+				'presale_form_7': "投资者类型",
+				'presale_success': "登记表已发送。 感谢您的关注。",
+				'presale_error': "发送数据有误。 稍后再试。"
+            },
+			kr: {
+				'menu_white_paper': "화이트 페이퍼",
+				'menu_register': "프리세일 전용 등록",
+				'menu_bit_gallery': "비트-갤러리",
+				'menu_wallart': "월 아트",
+				'menu_product': "제품",
+				'menu_team': "팀",
+				'menu_meet_us': "연락하기",
+				'contact_head': "연락처",
+				'contact_terms': "이용약관",
+				'contact_cookies': "쿠키 정책",
+				'contact_privacy': "프라이버시 정책",
+				'presale_head': "선구매 전용 등록",
+				'presale_text_1': "오리온 볼트 프라이빗 프리세일에 관심을 가져주셔서 감사합니다. 저희는 미래의 예술 투자 및 기부를 위한 인프라를 설립하고 있습니다. 지금까지 주신 성원에 감사드리며 저희 커뮤니티에 오신 것을 환영합니다.",
+				'presale_text_2': "오리온 볼트 프라이빗 프리세일의 정확한 세부사항은 아직 공지되지 않았습니다. 프리세일에 참여하고 싶으시거나 새로운 소식을 제일 먼저 듣고 싶으시다면 이 양식을 입력해주십시오. 흥미 여부를 표시하는 것으로, 이 양식을 제출한다고 할당을 보장받을 수는 없음을 기억해주십시오.",
+				'presale_form_1': "이름",
+				'presale_form_2': "성",
+				'presale_form_3': "이메일 주소",
+				'presale_form_4': "거주 국가",
+				'presale_form_5': "기부 금액",
+				'presale_form_6': "통화",
+				'presale_form_7': "투자 유형",
+				'presale_success': "신청서가 발송되었습니다. 관심을 가져주셔서 감사합니다.",
+				'presale_error': "데이터 전송 중 에러가 발생했습니다. 다시 시도해주십시오."
             }
 
         } );
@@ -494,6 +546,12 @@
         
             if( userLang === 'jp') {
                 return 'jp'; 
+			}
+            else if( userLang === 'zh') {
+                return 'zh'; 
+			}
+            else if( userLang === 'kr') {
+                return 'kr'; 
             } else {
                 return 'en;' 
             }
