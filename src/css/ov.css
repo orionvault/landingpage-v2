@@ -357,13 +357,13 @@ header img {
 
 #ico .diagram div:first-child {
   background-color: #fddf7f;
-  flex: 0 0 32%;
+  flex: 0 0 25%;
 }
 
 #ico .diagram div:last-child {
   background-color: #f1c231;
   flex: 0 0 68%;
-  height: 126px;
+  height: 255px;
 }
 
 @media (min-width: 992px) {
