@@ -352,12 +352,11 @@ header img {
 
 #ico .diagram div h4 {
   font-weight: bold;
-  margin: 20px 8px;
+  margin: 20px 12px;
 }
 
 #ico .diagram div:first-child {
   background-color: #fddf7f;
-  flex: 0 0 25%;
 }
 
 #ico .diagram div:last-child {
