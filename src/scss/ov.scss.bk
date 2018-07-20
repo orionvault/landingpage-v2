@@ -277,54 +277,6 @@ header {
 }
 
 #marketBusiness {
-    h3 {
-        margin: 0;
-    }
-
-    h4 {
-        margin: 8px 0 18px 0;
-    }
-
-    p {
-        margin-top: 24px;
-    }
-
-    .main-button {
-        margin: 32px 0 56px 0;      
-    }
-
-    @media (min-width: 992px) {
-
-        h4 {
-            margin: 8px 0 0 0;
-        }
-
-        p {
-            margin-top: 0;
-        }
-
-        .diagram {
-            margin: 36px 0;
-        }
-
-        .market-snippets {
-            display: flex;
-            margin-bottom: 28px; 
-            flex-wrap: wrap;
-
-            .market-snippet {
-                border-left: 1px solid #d5a23c;
-                flex: 0 0 33.333333%;
-                margin: 28px 0; 
-                padding: 0 20px;
-            }
-
-            .market-snippet:nth-child(3n + 1) {
-                border-left: none;
-            }
-        }
-    }
-
     padding-bottom: 40px;
         
     .diagram {
@@ -334,6 +286,18 @@ header {
 
     p {
         margin-bottom: 16px;
+    }
+
+    .rhombuses {
+        overflow: hidden;
+        margin: 38px 0 26px 0;
+
+        img {
+            width: 100%;
+            max-width: 312px;
+            margin: auto;
+            display: block;    
+        }
     }
 
     li {
@@ -376,18 +340,19 @@ header {
 
             h4 {
                 font-weight: bold;
-                margin: 20px 12px;
+                margin: 20px 8px;
             }
         }
 
         div:first-child {
             background-color: #fddf7f;
+            flex: 0 0 32%;            
         }
 
         div:last-child {
             background-color: #f1c231;
-            flex: 1;
-            height: 255px;
+            flex: 0 0 68%;
+            height: 126px;
         }
 
         @media (min-width: 992px) {
@@ -903,7 +868,6 @@ footer {
     font-weight: 700;
     letter-spacing: 0.75px;
     padding: 0;
-    word-break: keep-all;
 
     @media(min-width: 992px) {
         padding: 8px 24px;

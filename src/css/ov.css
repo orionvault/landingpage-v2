@@ -297,6 +297,7 @@ header img {
     border-left: 1px solid #d5a23c;
     flex: 0 0 33.333333%;
     margin: 28px 0;
+    padding: 0 20px;
   }
   #marketBusiness .market-snippets .market-snippet:nth-child(3n + 1) {
     border-left: none;
@@ -839,6 +840,7 @@ footer .contact > h5 {
   font-weight: 700;
   letter-spacing: 0.75px;
   padding: 0;
+  word-break: keep-all;
 }
 
 @media (min-width: 992px) {
