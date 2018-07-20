@@ -3,6 +3,8 @@ from rest_framework.viewsets import GenericViewSet
 from rest_framework import mixins
 from rest_framework import status
 
+from mailing.mail_service import EmailSender
+
 from .models import PresaleOrder
 from .serializers import PresaleSerializer
 
@@ -20,6 +22,10 @@ class PresaleViewSet(mixins.CreateModelMixin, GenericViewSet):
     def create(self, request, *args, **kwargs):
         serializer = self.serializer_class(data=request.data)
         if serializer.is_valid():
-            serializer.save()
+            presale = serializer.save()
+            EmailSender.send_template_mail(EmailSender.TEMPLATE_REGISTRATION,
+                                           {'presale': presale},
+                                           EmailSender.SUBJECT_REGISTRATION,
+                                           [presale.email])
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

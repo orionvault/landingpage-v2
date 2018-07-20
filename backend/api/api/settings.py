@@ -50,7 +50,9 @@ ROOT_URLCONF = 'api.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, "mailing/templates"),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -160,3 +162,13 @@ REST_FRAMEWORK = {
         'anon': '300/day',
     }
 }
+
+DEFAULT_FROM_EMAIL = 'Orion Vault Support'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'contact@orionvault.com'
+EMAIL_HOST_PASSWORD = ''
+EMAIL_PORT = 587
+
+BASE_FRONTEND_SITE_URL = 'https://orionvault.com'
