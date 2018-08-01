@@ -66,17 +66,8 @@ header {
 
 header .container-fluid:first-child {
   align-items: center;
-  background: url("../img/mona_lisa.png") no-repeat center top;
-  background-size: cover;
   display: flex;
-  min-height: 67vh;
-}
-
-@media (min-width: 768px) {
-  header .container-fluid:first-child {
-    background: url("../img/mona_lisa_desktop.png") no-repeat center top;
-    background-size: cover;
-  }
+  min-height: 50vh;
 }
 
 @media (min-width: 768px) {
@@ -90,7 +81,6 @@ header .brand-heading {
 }
 
 header .subtitle {
-  color: rgba(0, 0, 0, 0.56);
   margin-bottom: 32px;
 }
 
@@ -278,6 +268,10 @@ header img {
   margin: 32px 0 56px 0;
 }
 
+#marketBusiness .market-snippets {
+  margin-bottom: 28px;
+}
+
 @media (min-width: 992px) {
   #marketBusiness h4 {
     margin: 8px 0 0 0;
@@ -290,12 +284,11 @@ header img {
   }
   #marketBusiness .market-snippets {
     display: flex;
-    margin-bottom: 28px;
     flex-wrap: wrap;
   }
   #marketBusiness .market-snippets .market-snippet {
     border-left: 1px solid #d5a23c;
-    flex: 0 0 33.333333%;
+    flex: 0 0 50%;
     margin: 28px 0;
     padding: 0 20px;
   }

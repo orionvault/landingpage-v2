@@ -394,12 +394,7 @@
               </div>
           </div>
           <div class="col-12">
-              <select id="langOptions">
-                  <option value="en">English</option>
-                  <option value="jp">日本語</option>
-                  <option value="zh">中文</option>
-                  <option value="kr">한글</option>
-              </select>                                    
+              <br>                              
               <div class="contact">
                   <a href="/terms.html" data-i18n="contact_terms">Terms of Use</a> | 
                   <a href="/cookies.html" data-i18n="contact_cookies">Cookie Policy</a> |
@@ -537,52 +532,49 @@
 
         } );
 
-        var detectLanguage = function() {
-            var userLang = navigator.language || navigator.userLanguage;
+        // var detectLanguage = function() {
+        //     //TODO(dawid): fixing language to en 
+        //     return 'en';
+
+        //     var userLang = navigator.language || navigator.userLanguage;
         
-            if( userLang === 'jp' || userLang === 'ja') {
-                return 'jp'; 
-			}
-            else if( userLang === 'zh') {
-                return 'zh'; 
-			}
-            else if( userLang === 'kr' || userLang === 'ko') {
-                return 'kr'; 
-            } else {
-                return 'en'; 
-            }
-        }
-        var browserLang = detectLanguage();
-        $("#langOptions option[value=" + browserLang +"]").attr('selected', true);
+        //     if( userLang === 'jp' || userLang === 'ja') {
+        //         return 'jp'; 
+        //           }
+        //     else if( userLang === 'zh') {
+        //         return 'zh'; 
+        //           }
+        //     else if( userLang === 'kr' || userLang === 'ko') {
+        //         return 'kr'; 
+        //     } else {
+        //         return 'en';
+        //     }
+        // } 
+        // var browserLang = detectLanguage();
 
-        $.i18n().locale = browserLang;
-        $('body').i18n();
+        // $.i18n().locale = browserLang;
+        // $('body').i18n();        
 
-        var switchLanguage = function(l) {
-            $.i18n().locale = l;
-            $('body').i18n();
-        };
+        // var translateInputs = function() {
+        //     $("input[type=text], input[type=number], input[type=email], select").each(function(ev) {
+        //         if(!$(this).val()) { 
+        //             var fKey = $(this).attr("data-i18n");
+        //             var fValue = $.i18n(fKey);
+        //             $(this).attr("placeholder", fValue);
+        //             // $(this).attr("placeholder", "Type your answer here");
+        //         }
+        //     }); 
 
-        var translateInputs = function() {
-            $("input[type=text], input[type=number], input[type=email], select").each(function(ev) {
-                if(!$(this).val()) { 
-                    var fKey = $(this).attr("data-i18n");
-                    var fValue = $.i18n(fKey);
-                    $(this).attr("placeholder", fValue);
-                    // $(this).attr("placeholder", "Type your answer here");
-                }
-            }); 
+        //     // Translate submit button
+        //     $("input[type=submit]").attr("value", $.i18n("menu_register"));
+        // }
 
-            // Translate submit button
-            $("input[type=submit]").attr("value", $.i18n("menu_register"));
-        }
-
-        $('#langOptions').change(function() {
-            var selectedLang = $("#langOptions option:selected")[0].value;
-            switchLanguage(selectedLang);
-            translateInputs();
-            console.log($.i18n( 'presale_form_1' ));
-        });
+        // $('#langOptions').change(function() {
+        //     var selectedLang = $("#langOptions option:selected")[0].value;
+        //     switchLanguage(selectedLang);
+        //     translateInputs();
+        //     console.log($.i18n( 'presale_form_1' ));
+        // });
         
     </script>
 
