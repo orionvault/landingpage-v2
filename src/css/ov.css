@@ -805,6 +805,10 @@ footer .contact > h5 {
   height: 20px;
 }
 
+.navbar .swiss-flag {
+  height: 22px;
+}
+
 .navbar .navbar-toggler:focus {
   outline: 0;
 }
@@ -820,6 +824,10 @@ footer .contact > h5 {
 @media (min-width: 992px) {
   .navbar .logo {
     height: 34px;
+  }
+  .navbar .swiss-flag {
+    height: 36px;
+    margin-left: 16px;
   }
   .navbar > .container > button {
     display: none;
@@ -900,8 +908,8 @@ a.main-button, #mainNav a.main-button {
   border: 1px solid #DAAE46;
   height: 36px;
   border-radius: 0px;
-  background: #fff;
-  margin-left: 10px;
+  background: transparent;
+  margin: 10px 0;
   -moz-appearance: none;
   /* Firefox */
   -webkit-appearance: none;

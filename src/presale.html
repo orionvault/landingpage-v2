@@ -43,12 +43,6 @@
               <li class="nav-item d-lg-none">
                 <a class="nav-link" href="presale.html" target="_blank" data-i18n="menu_register">REGISTER FOR PRESALE</a>
               </li>
-              <li class="nav-item d-lg-none">
-                <a class="nav-link" href="http://gallery.orionvault.com" target="_blank" data-i18n="menu_bit_gallery">BIT-GALLERY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/wallpaper.html" data-i18n="menu_wallart">WALLART</a>
-              </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="/#product" data-i18n="menu_product">PRODUCT</a>
               </li>
@@ -59,22 +53,14 @@
                 <a class="nav-link js-scroll-trigger" href="/#meetus" data-i18n="menu_meet_us">MEET US</a>
               </li>
               <li class="nav-item d-none d-lg-block">
-                <a class="nav-link" href="http://gallery.orionvault.com" target="_blank" data-i18n="menu_bit_gallery">BIT-GALLERY</a>
-              </li>
-              <li class="nav-item d-none d-lg-block">
                 <a class="nav-link" href="files/Orion Vault One Pager.pdf" target="_blank" data-i18n="menu_one_pager">ONE PAGER</a>
               </li>
               <li class="nav-item d-none d-lg-block">
                 <a class="nav-link main-button" href="files/Orion Vault White Paper.pdf" target="_blank" data-i18n="menu_white_paper">WHITE PAPER</a>
               </li>
-              <li class="nav-item">
-                  <select id="langOptions">
-                      <option value="en">English</option>
-                      <option value="jp">日本語</option>
-                      <option value="zh">中文</option>
-                      <option value="kr">한글</option>
-                  </select>
-              </li>
+              <li class="nav-item d-none d-lg-block">
+                <a class="js-scroll-trigger" href="/#information"><img class="swiss-flag" src="../img/swiss.svg"/></a>
+              </li>              
             </ul>      
           </div>
         </div>
@@ -408,7 +394,12 @@
               </div>
           </div>
           <div class="col-12">
-              <br>
+              <select id="langOptions">
+                  <option value="en">English</option>
+                  <option value="jp">日本語</option>
+                  <option value="zh">中文</option>
+                  <option value="kr">한글</option>
+              </select>                                    
               <div class="contact">
                   <a href="/terms.html" data-i18n="contact_terms">Terms of Use</a> | 
                   <a href="/cookies.html" data-i18n="contact_cookies">Cookie Policy</a> |
@@ -549,20 +540,20 @@
         var detectLanguage = function() {
             var userLang = navigator.language || navigator.userLanguage;
         
-            if( userLang === 'jp') {
+            if( userLang === 'jp' || userLang === 'ja') {
                 return 'jp'; 
 			}
             else if( userLang === 'zh') {
                 return 'zh'; 
 			}
-            else if( userLang === 'kr') {
+            else if( userLang === 'kr' || userLang === 'ko') {
                 return 'kr'; 
             } else {
-                return 'en;' 
+                return 'en'; 
             }
         }
         var browserLang = detectLanguage();
-
+        $("#langOptions option[value=" + browserLang +"]").attr('selected', true);
 
         $.i18n().locale = browserLang;
         $('body').i18n();

@@ -864,6 +864,10 @@ footer {
         height: 20px;
     }
 
+    .swiss-flag {
+        height: 22px;
+    }
+
     .navbar-toggler:focus {
         outline: 0;
     } 
@@ -878,8 +882,14 @@ footer {
 
     @media(min-width: 992px) {
         .logo {
-            height: 34px;
+            height: 34px;       
         }
+
+        .swiss-flag {
+            height: 36px;
+            margin-left: 16px;     
+        }
+
         & > .container > button {
             display: none;
         }  
@@ -965,8 +975,8 @@ a.main-button, #mainNav a.main-button {
     border: 1px solid $yellow;
     height: 36px;
     border-radius: 0px;
-    background: #fff;
-    margin-left: 10px;
+    background: transparent;
+    margin: 10px 0;
     -moz-appearance:none; /* Firefox */
     -webkit-appearance:none; /* Safari and Chrome */
     appearance:none;
