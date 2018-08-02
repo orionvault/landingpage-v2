@@ -99,34 +99,29 @@ header img {
   padding-top: 32px;
 }
 
-#problem ul {
-  margin: 0;
-}
-
-#problem li {
-  line-height: 20px;
-  list-style-image: url("../img/bullet.svg");
-  margin-bottom: 16px;
-}
-
-#problem li span {
-  vertical-align: top;
-}
-
-#problem .row:last-child {
+#problem h2 {
   margin-bottom: 30px;
 }
 
+#problem h4 {
+  margin: 16px 0;
+}
+
+#problem .problem {
+  border: 1px solid #d5a23c;
+  margin-bottom: 40px;
+  padding: 32px;
+}
+
 @media (min-width: 768px) {
-  #problem h2 {
-    margin-bottom: 30px;
+  #problem .problem {
+    border: none;
+    padding: 0;
   }
-  #problem h4 {
-    margin-top: 16px;
-  }
-  #problem .row:last-child > div:last-child {
-    border-left: 1px solid #d5a23c;
-  }
+}
+
+#solution h2 {
+  margin-bottom: 30px;
 }
 
 #solution h3 {
@@ -272,13 +267,13 @@ header img {
   margin-bottom: 28px;
 }
 
+#marketBusiness .market-snippets .market-snippet {
+  border: 1px solid #d5a23c;
+  margin-bottom: 40px;
+  padding: 32px;
+}
+
 @media (min-width: 992px) {
-  #marketBusiness h4 {
-    margin: 8px 0 0 0;
-  }
-  #marketBusiness p {
-    margin-top: 0;
-  }
   #marketBusiness .diagram {
     margin: 36px 0;
   }
@@ -287,13 +282,10 @@ header img {
     flex-wrap: wrap;
   }
   #marketBusiness .market-snippets .market-snippet {
-    border-left: 1px solid #d5a23c;
+    border: none;
     flex: 0 0 50%;
     margin: 28px 0;
     padding: 0 20px;
-  }
-  #marketBusiness .market-snippets .market-snippet:nth-child(3n + 1) {
-    border-left: none;
   }
 }
 
@@ -302,8 +294,8 @@ header img {
   overflow: hidden;
 }
 
-#marketBusiness p {
-  margin-bottom: 16px;
+#marketBusiness .description {
+  margin-bottom: 28px;
 }
 
 #marketBusiness li {

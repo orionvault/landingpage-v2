@@ -104,40 +104,32 @@ header {
 }
 
 #problem {
-    ul {
-        margin: 0;
-    }
-
-    li {
-        line-height: 20px;
-        list-style-image: url("../img/bullet.svg");
-        margin-bottom: 16px;
-
-        span {
-            vertical-align: top;
-        }
-    }
-
-    .row:last-child {
+    h2 {
         margin-bottom: 30px;
     }
 
+    h4 {
+        margin: 16px 0;
+    }
+
+    .problem {
+        border: 1px solid #d5a23c;
+        margin-bottom: 40px;
+        padding: 32px;
+    } 
+
     @media (min-width: 768px) {
-        h2 {
-            margin-bottom: 30px;
-        }
-
-        h4 {
-            margin-top: 16px;
-        }
-
-        .row:last-child > div:last-child {
-            border-left: 1px solid #d5a23c;
-        }
+        .problem {
+            border: none;
+            padding: 0;
+        } 
     }        
 }
 
 #solution {
+    h2 {
+        margin-bottom: 30px;
+    }
 
     h3 {
         margin: 40px 0 34px 0;    
@@ -286,18 +278,15 @@ header {
     
     .market-snippets {
         margin-bottom: 28px;
+
+        .market-snippet {
+            border: 1px solid #d5a23c;
+            margin-bottom: 40px;
+            padding: 32px;            
+        }
     }
 
     @media (min-width: 992px) {
-
-        h4 {
-            margin: 8px 0 0 0;
-        }
-
-        p {
-            margin-top: 0;
-        }
-
         .diagram {
             margin: 36px 0;
         }
@@ -307,14 +296,10 @@ header {
             flex-wrap: wrap;
 
             .market-snippet {
-                border-left: 1px solid #d5a23c;
+                border: none;
                 flex: 0 0 50%;
                 margin: 28px 0; 
                 padding: 0 20px;
-            }
-
-            .market-snippet:nth-child(3n + 1) {
-                border-left: none;
             }
         }
     }
@@ -326,8 +311,8 @@ header {
         overflow: hidden;
     }
 
-    p {
-        margin-bottom: 16px;
+    .description {
+        margin-bottom: 28px;
     }
 
     li {
