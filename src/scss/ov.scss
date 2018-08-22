@@ -240,6 +240,8 @@ header {
         }
         
         .product-image {
+            overflow: hidden;
+            
             video {
                 position: relative;
                 left: calc(50% - 471px);
