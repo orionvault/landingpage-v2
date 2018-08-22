@@ -126,7 +126,7 @@
   }
 
   $('#videoProduct').on('ended', function() {
-    $('#videoReplay').toggle(true);
+    $('#videoReplay').css('visibility', 'visible');
   });
 
     $('#videoReplay').on('click', function() {

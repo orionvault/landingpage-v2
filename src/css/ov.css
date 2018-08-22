@@ -237,6 +237,7 @@ header img {
   cursor: pointer;
   visibility: hidden;
   padding: 24px;
+  padding-top: 0;
 }
 
 @media (min-width: 576px) {
