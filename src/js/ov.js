@@ -1,5 +1,11 @@
 (function($) {
   "use strict"; // Start of use strict
+  
+  var isMobile = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+  var isNotIOS = (/android|webos|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+  if (isMobile && isNotIOS) {
+    $('#videoReplay').css('visibility', 'visible');
+  }
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
