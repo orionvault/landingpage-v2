@@ -228,10 +228,15 @@ header img {
   margin-right: calc(50vw - 110px);
 }
 
-#product .container-fluid .product-image img {
+#product .container-fluid .product-image video {
   position: relative;
-  left: calc(50% - 440px);
-  width: 880px;
+  left: calc(50% - 472px);
+}
+
+#product .container-fluid .product-image .learn-more {
+  cursor: pointer;
+  visibility: hidden;
+  padding: 24px;
 }
 
 @media (min-width: 576px) {

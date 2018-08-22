@@ -125,4 +125,12 @@
     $(images[i]).after(faceLink);
   }
 
+  $('#videoProduct').on('ended', function() {
+    $('#videoReplay').toggle(true);
+  });
+
+    $('#videoReplay').on('click', function() {
+      $('#videoProduct').get(0).play();
+  });
+
 })(jQuery); // End of use strict

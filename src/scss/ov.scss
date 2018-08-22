@@ -239,11 +239,18 @@ header {
             }
         }
         
-        .product-image img {
-            position: relative;
-            left: calc(50% - 440px);
-            width: 880px;
-        } 
+        .product-image {
+            video {
+                position: relative;
+                left: calc(50% - 472px);
+            }
+
+            .learn-more {
+                cursor: pointer;
+                visibility: hidden;
+                padding: 24px;
+            } 
+        }
     }
 
     @media (min-width: 576px) {   
